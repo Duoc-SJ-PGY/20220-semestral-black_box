@@ -1,0 +1,39 @@
+{
+    "data":[
+        {
+            "name": "Arroz",
+            "state": "banquete",
+            "description": "arroz grano largo",
+            "image": "arroz.jpg"
+            
+        },
+        {
+            "name": "Pollo",
+            "state": "asado",
+            "description": "pollo a las brasas",
+            "image": "pollo.jpg"
+            
+        },
+        {
+            "name": "Leche",
+            "state": "colun",
+            "description": "leche entera",
+            "image": "leche.jpg"
+            
+        },
+        {
+            "name": "Aceite",
+            "state": "miraflores",
+            "description": "aceite de maravilla",
+            "image": "aceite.jpg"
+            
+        },
+        {
+            "name": "Pepsi",
+            "state": "lata",
+            "description": "bebida cola",
+            "image": "lata.jpg"
+            
+        }
+    ]
+}
