@@ -1,0 +1,106 @@
+
+ion-toolbar{
+  background-color: var(--ion-color-estilopropio);
+}
+
+.a {
+  color: blue;
+  background-color: aqua;
+}
+
+.perfilcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+small{
+  font-size: 15px;
+  color: #242526;
+}
+
+p{
+  color: black;
+  font-size: 250%;
+}
+
+.fotoperfil{
+  height: 25vh;
+  width: 50vw;
+  border: 2px solid #060606;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #515455; 
+}
+
+.fotoperfil2{
+  border-radius: 80px;
+  
+}
+
+ion-card {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.botonmostrarnombre {
+  color: black;
+}
+
+
+button {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border: 1px solid black;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 15px;
+  color: black;
+}
+
+ion-card{
+  background-color: #2b7686;
+}
+
+.botonmostrarnombre{
+  color: black;
+}
+
+.botones{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border: 1px solid black;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 15px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  background: blue;
+  margin: 10px;
+
+  --background: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  .square {
+    --background: rgb(134, 23, 10);
+  }
+
+  
+  @media (prefers-color-scheme: dark) {
+    .square {
+      --background: rgb(134, 23, 10);
+    }
+  }
+  
+
+}
+

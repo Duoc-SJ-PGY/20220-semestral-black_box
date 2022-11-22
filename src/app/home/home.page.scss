@@ -1,0 +1,51 @@
+.botonprod{
+  height: 30vh;
+}
+
+ion-fab-button {
+  --background: #b7f399;
+  --background-activated: #87d361;
+  --background-hover: #a3e681;
+  --border-radius: 15px;
+  --box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3), 0px 1px 3px 1px rgba(0,0,0,.15);
+  --color: black;
+}
+
+.botonnav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.cajabtninicio{
+  background-image: linear-gradient(to bottom, #4e4f52, #525556, #555859, #5b5d5d, #606060);  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 89%;
+  height: 10vh;
+  width: 17rem;
+}
+
+
+ion-card{
+  width: 190px;
+  height: 254px;
+  background: transparent;
+  border: 2px solid #07ff07;
+  box-shadow: 2px 2px 15px #000000 inset;
+  text-align: center;
+  color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico';
+}
+
+ion-card:hover {
+  color: #07ff07;
+  box-shadow: 2px 2px 15px #07ff07 inset;
+}

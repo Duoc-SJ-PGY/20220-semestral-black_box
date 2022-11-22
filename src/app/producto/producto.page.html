@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="estilopropio">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>     
+    <ion-title>
+      Tienda Brian
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+
+  <ion-row>
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" *ngFor=" let productos of producto">
+      <ion-card [routerLink]="['/productos',productos.id]">
+        <img src="../../assets/producto-imagen/{{productos.imagen}}">
+        <div class="card-title">{{productos.name}}</div>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+
+</ion-content>
