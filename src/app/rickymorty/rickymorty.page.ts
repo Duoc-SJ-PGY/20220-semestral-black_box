@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { OfertasService } from '../ofertas.service';
 
 @Component({
   selector: 'app-rickymorty',
@@ -9,16 +8,26 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RickymortyPage implements OnInit {
 
-  personajes = [];
+  data: any;
 
-  constructor(private http:HttpClient) { }
+  constructor(private oferta:OfertasService ) { }
 
   ngOnInit() {
-    this.http.get<any>('https://rickandmortyapi.com/api/character')
-    .subscribe(res => {
-      this.personajes = res.results;
-      console.log('personajes',this.personajes);
-    })
-  }
+    this.getIndicadores();
+    
+    }
 
-}
+    getIndicadores(){
+      this.oferta.getIndicadores().then(respuesta => {
+        this.data = respuesta;
+        console.log(this.data);
+      },
+      (err) => {
+        console.error(err)
+      }
+      )
+    }
+
+  
+
+ }

@@ -3,17 +3,12 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>rickymorty</ion-title>
+    <ion-title>Ofertas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
- <ion-list *ngFor="let i of personajes">
-  <ion-item>
-    <ion-avatar slot="start" >
-      <img src="{{i.image}}" alt="">
-    </ion-avatar>
-    <ion-label>{{i.name}}</ion-label>
-  </ion-item>
+ <ion-list *ngFor="let i of data">
+  <p>{{i.nombre}}</p>
  </ion-list>
 </ion-content>
